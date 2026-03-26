@@ -1,0 +1,42 @@
+[
+  {
+    "cve_id": "CVE-2021-36260",
+    "brand": "Hikvision",
+    "description": "Command injection allows unauthenticated remote code execution",
+    "cvss_score": 9.8,
+    "severity": "Critical",
+    "fix": "Update firmware to version 5.5.800 or later"
+  },
+  {
+    "cve_id": "CVE-2017-7921",
+    "brand": "Hikvision",
+    "description": "Authentication bypass allows access without valid credentials",
+    "cvss_score": 9.1,
+    "severity": "Critical",
+    "fix": "Update firmware and disable ONVIF if unused"
+  },
+  {
+    "cve_id": "CVE-2021-33044",
+    "brand": "Dahua",
+    "description": "Authentication bypass in login endpoint",
+    "cvss_score": 9.8,
+    "severity": "Critical",
+    "fix": "Apply Dahua security patch DSA-2021-001"
+  },
+  {
+    "cve_id": "CVE-2022-30563",
+    "brand": "Dahua",
+    "description": "Cleartext transmission of sensitive information over ONVIF",
+    "cvss_score": 6.8,
+    "severity": "Medium",
+    "fix": "Disable ONVIF or enable encrypted communication"
+  },
+  {
+    "cve_id": "CVE-2018-10088",
+    "brand": "CP Plus",
+    "description": "Buffer overflow in DVR allows remote code execution",
+    "cvss_score": 9.8,
+    "severity": "Critical",
+    "fix": "Update to latest firmware from CP Plus support"
+  }
+]
