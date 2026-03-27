@@ -10,10 +10,14 @@ export const runScan = (ipRange) =>
   })
 
 export const downloadReport = async (ipRange, devices) => {
-  const res = await axios.post(`${BASE}/report`, devices, {
-    params: { ip_range: ipRange },
-    responseType: 'blob'
-  })
+  const res = await axios.post(
+    `${BASE}/report?ip_range=${encodeURIComponent(ipRange)}`,
+    JSON.stringify(devices),
+    {
+      responseType: 'blob',
+      headers: { 'Content-Type': 'application/json' }
+    }
+  )
   const url = window.URL.createObjectURL(new Blob([res.data]))
   const link = document.createElement('a')
   link.href = url
